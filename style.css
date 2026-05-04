@@ -3,6 +3,14 @@ body {
     font: normal 15pt Arial, sans-serif;
 }
 
+input[type="number"],
+input[type="button"],
+button,
+select {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 header {
     color: white;
     text-align: center;
@@ -38,4 +46,19 @@ footer {
     text-align: center;
     font-style: italic;
     padding: 20px;
+}
+
+@media (max-width: 360px) {
+    body {
+        font-size: 12pt;
+    }
+
+    section {
+        width: 95%;
+        padding: 10px;
+    }
+
+    input[type="number"] {
+        width: 80px;
+    }
 }

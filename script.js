@@ -80,7 +80,9 @@ function contar() {
             window.alert('Passo inválido! Considerando PASSO 1');
             p = 1;
         }
-        if (i < f) {
+        if (i === f) {
+            resultado.innerHTML = `Início e fim são iguais. Apenas um valor: ${i} 🏁`;
+        } else if (i < f) {
             // MELHORIA: var → let para escopo correto de bloco
             for (let c = i; c <= f; c += p) {
                 resultado.innerHTML += ` ${c} \u{1F449} `;
